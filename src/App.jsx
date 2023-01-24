@@ -10,6 +10,7 @@ import OurProducts from "./components/OurProducts/OurProducts";
 import NesaAi from "./components/OurProducts/products/NesaAi";
 import Nesadoc from "./components/OurProducts/products/Nesadoc";
 import Nesalink from "./components/OurProducts/products/Nesalink";
+import Spacing from "./lib/Spacing";
 
 function App() {
   useEffect(() => {
@@ -23,7 +24,9 @@ function App() {
         <Hero animation="fade-down" />
         <OurProducts animation="fade-down" />
         <Nesadoc animation="fade-down" />
+        <Spacing />
         <Nesalink animation="fade-down" />
+        <Spacing />
         <NesaAi animation="fade-down" />
       </Container>
     </>

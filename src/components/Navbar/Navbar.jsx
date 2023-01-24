@@ -5,12 +5,15 @@ import { FaBars } from "react-icons/fa";
 
 import { englishContent } from "../../content";
 
+import LOGO from "../../assets/logo.png";
+
 const Navbar = () => {
   return (
     <Nav>
       <Container>
         <Container className="brand">
-          <h1>{englishContent.title.split(" ")[0]}</h1>
+          {/* <h1>{englishContent.title.split(" ")[0]}</h1> */}
+          <Image src={LOGO} alt="" />
         </Container>
 
         <Container className="nav-items">
@@ -148,4 +151,9 @@ const Container = styled.div`
       }
     }
   }
+`;
+
+const Image = styled.img`
+  width: calc(4vw + 1rem);
+  height: auto;
 `;

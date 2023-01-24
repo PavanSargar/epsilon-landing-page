@@ -66,5 +66,11 @@ const Image = styled.img`
     max-width: 200px;
 
     margin-left: -3rem;
+
+    @media screen and (max-width: 992px) {
+      width: 30vw;
+      max-width: 200px;
+      margin-left: -1rem;
+    }
   }
 `;

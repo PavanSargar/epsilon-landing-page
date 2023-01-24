@@ -13,16 +13,16 @@ const NesaAi = ({ animation }) => {
     <Container data-aos={animation}>
       <Grid container justifyContent="center" alignItems="center">
         <GridItem md="6" sm="12" xs="12">
-          <Title className="md">{englishContent.products.nesaAi.title}</Title>
-          <Para className="md left">
+          <Title className="md ">{englishContent.products.nesaAi.title}</Title>
+          <Para className="md left ">
             {englishContent.products.nesaAi.description}
           </Para>
           <br />
-          <Para className="md left gd bold link">
+          <Para className="md left bold link gd">
             {englishContent.products.nesaAi.tapBtn}
           </Para>
           <br />
-          <Para className="md left">
+          <Para className="md left ">
             {englishContent.products.nesaAi.description2}
           </Para>
         </GridItem>
@@ -42,6 +42,7 @@ export default NesaAi;
 const Container = styled.div`
   padding: ${(props) => props.theme.sectionMargin};
   background-color: ${(props) => props.theme.bgColor};
+  /* background: linear-gradient(135deg, #475ac3, #8b55d0); */
 `;
 
 const Image = styled.img`

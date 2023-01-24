@@ -5,6 +5,7 @@ import { Grid, GridItem } from "../../../lib/Grid";
 import Para from "../../../lib/Para";
 import Title from "../../../lib/Title";
 import IMG from "../../../assets/nesalink.png";
+import IMG1 from "../../../assets/nesalink-img.png";
 import { englishContent } from "../../../content";
 
 const Nesalink = ({ animation }) => {
@@ -12,10 +13,7 @@ const Nesalink = ({ animation }) => {
     <Container data-aos={animation}>
       <Grid container justifyContent="center" alignItems="center">
         <GridItem md="6" sm="12" xs="12">
-          <Image
-            src="https://uploads-ssl.webflow.com/62d7d2c09b7ee74d5f86ea61/6385e41760f044c88bed0d15_Group_247_1_1_optimized-p-500.webp"
-            alt=""
-          />
+          <Image src={IMG1} alt="" />
         </GridItem>
         <GridItem md="6" sm="12" xs="12">
           <Image className="logo-img" src={IMG} alt="" />
@@ -29,6 +27,7 @@ const Nesalink = ({ animation }) => {
           <Para className="left md bold gd">
             {englishContent.products.nesalink.tabBtn}
           </Para>
+          <Image src={IMG1} alt="" className="mobile-img" />
         </GridItem>
       </Grid>
     </Container>
@@ -59,21 +58,31 @@ const Image = styled.img`
   -o-object-position: 50% 0%;
   object-position: 50% 0%;
 
+  &.mobile-img {
+    display: none;
+  }
+
   @media screen and (max-width: 992px) {
     width: 60vw;
     margin-left: -20px;
   }
 
   @media screen and (max-width: 768px) {
-   margin-left: -60px;
+    margin-left: -60px;
+    display: none;
+
+    &.mobile-img {
+      display: flex;
+      margin-left: -30px;
+    }
   }
 
   &.logo-img {
     background-color: transparent;
-    width: 15vw;
+    width: 10vw;
     max-width: 200px;
 
-    margin-left: -9rem;
+    margin-left: -8rem;
 
     @media screen and (max-width: 992px) {
       width: 30vw;

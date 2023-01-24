@@ -18,13 +18,13 @@ const Navbar = () => {
 
         <Container className="nav-items">
           <p>
-            <span>Mission</span>
+            <span>Products</span>
           </p>
           <p>
-            <span>Technology</span>
+            <span>About</span>
           </p>
           <p>
-            <span>Business</span>
+            <span>Contact</span>
           </p>
         </Container>
       </Container>
@@ -156,4 +156,12 @@ const Container = styled.div`
 const Image = styled.img`
   width: calc(4vw + 1rem);
   height: auto;
+
+  @media screen and (max-width: 768px) {
+    width: calc(6vw + 1rem);
+  }
+
+  @media screen and (max-width: 400px) {
+    width: calc(6vw + 2rem);
+  }
 `;

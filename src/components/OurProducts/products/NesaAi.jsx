@@ -13,6 +13,7 @@ const NesaAi = ({ animation }) => {
     <Container data-aos={animation}>
       <Grid container justifyContent="center" alignItems="center">
         <GridItem md="6" sm="12" xs="12">
+          <Image className="logo-img" src={IMG} alt="" />
           <Title className="md ">{englishContent.products.nesaAi.title}</Title>
           <Para className="md left ">
             {englishContent.products.nesaAi.description}
@@ -53,5 +54,19 @@ const Image = styled.img`
   @media screen and (max-width: 992px) {
     width: 60vw;
     margin-left: 20px;
+  }
+
+  &.logo-img {
+    background-color: transparent;
+    width: 10vw;
+    max-width: 200px;
+
+    margin-left: -1rem;
+
+    @media screen and (max-width: 992px) {
+      width: 30vw;
+      max-width: 200px;
+      margin-left: -1rem;
+    }
   }
 `;

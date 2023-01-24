@@ -7,7 +7,7 @@ import Title from "../../lib/Title";
 const Hero = ({ animation }) => {
   return (
     <Container data-aos={animation}>
-      <Title>{englishContent.title}</Title>
+      <Title className="gd">{englishContent.title}</Title>
       <Para>{englishContent.description}</Para>
 
       <Image

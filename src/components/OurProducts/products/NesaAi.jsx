@@ -4,6 +4,8 @@ import { Grid, GridItem } from "../../../lib/Grid";
 import Title from "../../../lib/Title";
 import Para from "../../../lib/Para";
 
+import IMG from "../../../assets/nesaai.png";
+
 import { englishContent } from "../../../content";
 
 const NesaAi = ({ animation }) => {
@@ -14,6 +16,14 @@ const NesaAi = ({ animation }) => {
           <Title className="md">{englishContent.products.nesaAi.title}</Title>
           <Para className="md left">
             {englishContent.products.nesaAi.description}
+          </Para>
+          <br />
+          <Para className="md left gd bold link">
+            {englishContent.products.nesaAi.tapBtn}
+          </Para>
+          <br />
+          <Para className="md left">
+            {englishContent.products.nesaAi.description2}
           </Para>
         </GridItem>
         <GridItem md="6" sm="12" xs="12">

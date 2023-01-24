@@ -21,8 +21,22 @@ const Container = styled.p`
     font-size: 20px;
   }
 
+  &.gd {
+    background: -webkit-linear-gradient(135deg, #8b55d0, #475ac3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   &.white {
     color: ${(props) => props.theme.bgColor};
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.link {
+    cursor: pointer;
   }
 
   &.left {

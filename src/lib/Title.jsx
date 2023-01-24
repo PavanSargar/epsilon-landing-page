@@ -32,7 +32,7 @@ const Container = styled.h2`
   }
 
   &.gd {
-    background: -webkit-linear-gradient(#475ac3, #8b55d0);
+    background: -webkit-linear-gradient(135deg, #8b55d0, #475ac3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

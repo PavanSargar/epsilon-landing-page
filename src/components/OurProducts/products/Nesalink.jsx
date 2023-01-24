@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Grid, GridItem } from "../../../lib/Grid";
 import Para from "../../../lib/Para";
 import Title from "../../../lib/Title";
-
+import IMG from "../../../assets/nesalink.png";
 import { englishContent } from "../../../content";
 
 const Nesalink = ({ animation }) => {
@@ -18,11 +18,16 @@ const Nesalink = ({ animation }) => {
           />
         </GridItem>
         <GridItem md="6" sm="12" xs="12">
-          <Title className="md white left">
+          <Image className="logo-img" src={IMG} alt="" />
+          <Title className="md left">
             {englishContent.products.nesalink.title}
           </Title>
-          <Para className="left white md">
+          <Para className="left md">
             {englishContent.products.nesalink.description}
+          </Para>
+          <br />
+          <Para className="left md bold gd">
+            {englishContent.products.nesalink.tabBtn}
           </Para>
         </GridItem>
       </Grid>
@@ -34,7 +39,7 @@ export default Nesalink;
 
 const Container = styled.div`
   padding: ${(props) => props.theme.sectionMargin};
-  background: -webkit-linear-gradient(135deg, #475ac3, #8b55d0);
+  background-color: ${(props) => props.theme.bgColor};
 `;
 
 const Image = styled.img`
@@ -58,5 +63,13 @@ const Image = styled.img`
     width: 60vw;
 
     margin-left: -20px;
+  }
+
+  &.logo-img {
+    background-color: transparent;
+    width: 15vw;
+    max-width: 200px;
+
+    margin-left: -9rem;
   }
 `;

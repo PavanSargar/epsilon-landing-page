@@ -40,7 +40,6 @@ const Container = styled.div`
   background-color: ${(props) => props.theme.bgColor};
   /* background: -webkit-linear-gradient(135deg, #475ac3, #8b55d0); */
 
-
   &.logo-img {
     display: flex;
     align-items: center;
@@ -59,6 +58,9 @@ const Image = styled.img`
   @media screen and (max-width: 992px) {
     width: 60vw;
     margin-left: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-left: 40px;
   }
 
   &.logo {

@@ -64,6 +64,10 @@ const Image = styled.img`
     margin-left: -20px;
   }
 
+  @media screen and (max-width: 768px) {
+   margin-left: -60px;
+  }
+
   &.logo-img {
     background-color: transparent;
     width: 15vw;

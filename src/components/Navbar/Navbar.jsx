@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Button from "../../lib/Button";
 import { FaBars } from "react-icons/fa";
+import { MdClose } from "react-icons/md";
 
 import { englishContent } from "../../content";
 
 import LOGO from "../../assets/logo.png";
 
 const Navbar = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <Nav>
       <Container>
@@ -28,10 +30,21 @@ const Navbar = () => {
           </p>
         </Container>
       </Container>
+      <Container className={`nav-mobile-menu ${isOpen ? "open" : "close"} `}>
+        <p>
+          <span>Products</span>
+        </p>
+        <p>
+          <span>About</span>
+        </p>
+        <p>
+          <span>Contact</span>
+        </p>
+      </Container>
 
       <Container className="buttons">
-        <span>
-          <FaBars />
+        <span onClick={() => setOpen(!isOpen)}>
+          {isOpen ? <MdClose /> : <FaBars />}
         </span>
         <Button className="nav-btn">Button1</Button>
         <Button className="nav-btn bg-dark">Button2</Button>
@@ -44,7 +57,6 @@ export default Navbar;
 
 const Nav = styled.nav`
   padding: 1rem 2rem;
-
   opacity: 1;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -71,7 +83,6 @@ const Nav = styled.nav`
   box-shadow: none;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  font-family: Poppins, sans-serif;
   font-weight: 300;
 `;
 
@@ -111,6 +122,58 @@ const Container = styled.div`
     }
   }
 
+  &.nav-mobile-menu {
+    display: none;
+    position: fixed;
+    z-index: -999;
+    left: 0;
+    width: 100%;
+    /* padding: 12px; */
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0px;
+
+      /* padding-left: 2rem; */
+
+      p {
+        margin-top: 0.2rem;
+        padding: 1rem;
+        width: 100%;
+        cursor: pointer;
+
+        transition: all 0.3s;
+
+        :hover {
+          background-color: ${(props) => props.theme.bgColor};
+        }
+      }
+
+      p span {
+        transition: 350ms;
+        color: #534b57;
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &.open {
+    top: 100px;
+    transition: all 0.4s;
+    z-index: -999;
+  }
+
+  &.close {
+    top: -300px;
+    transition: all 0.4s;
+  }
+
   &.buttons {
     display: flex;
     align-items: center;
@@ -142,7 +205,7 @@ const Container = styled.div`
         }
       }
 
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 768px) {
         display: inline-block;
         /* margin: 0.5rem 0 0 0; */
         svg {

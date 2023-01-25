@@ -21,7 +21,7 @@ const Container = styled.p`
     font-size: 20px;
   }
 
-  &.gd {
+  &.gd, .gd {
     background: -webkit-linear-gradient(135deg, #8b55d0, #475ac3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -31,7 +31,7 @@ const Container = styled.p`
     color: ${(props) => props.theme.bgColor};
   }
 
-  &.bold {
+  &.bold, .bold {
     font-weight: bold;
   }
 

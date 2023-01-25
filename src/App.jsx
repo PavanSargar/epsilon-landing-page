@@ -11,6 +11,8 @@ import NesaAi from "./components/OurProducts/products/NesaAi";
 import Nesadoc from "./components/OurProducts/products/Nesadoc";
 import Nesalink from "./components/OurProducts/products/Nesalink";
 import Spacing from "./lib/Spacing";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   useEffect(() => {
@@ -28,6 +30,10 @@ function App() {
         <Nesalink animation="fade-down" />
         <Spacing />
         <NesaAi animation="fade-down" />
+        <Spacing />
+        <About />
+        <Spacing />
+        <Contact />
       </Container>
     </>
   );

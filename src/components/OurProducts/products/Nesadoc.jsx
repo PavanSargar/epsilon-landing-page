@@ -53,7 +53,8 @@ const Container = styled.div`
 const Image = styled.img`
   position: static;
   width: 40vw;
-  max-width: 600px;
+  max-width: 500px;
+  margin-left: 2rem;
 
   @media screen and (max-width: 992px) {
     width: 60vw;

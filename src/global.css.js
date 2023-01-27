@@ -8,6 +8,8 @@ body {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   /* font-family: serif; */
+
+  scroll-behavior: smooth;
 }
 body {
   background-color: ${(props) => props.theme.bgColor};

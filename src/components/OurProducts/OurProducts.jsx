@@ -4,7 +4,7 @@ import Title from "../../lib/Title";
 
 const OurProducts = ({ animation }) => {
   return (
-    <Container data-aos={animation}>
+    <Container id="products" data-aos={animation}>
       <Title className="center gd">Our Products</Title>
     </Container>
   );

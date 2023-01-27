@@ -4,16 +4,15 @@ import { englishContent } from "../../content";
 import Para from "../../lib/Para";
 import Title from "../../lib/Title";
 
+import IMG from "../../assets/ep2.webp";
+
 const Hero = ({ animation }) => {
   return (
     <Container data-aos={animation}>
       <Title className="gd">{englishContent.title}</Title>
       <Para>{englishContent.description}</Para>
 
-      <Image
-        alt=""
-        src="https://uploads-ssl.webflow.com/62d7d2c09b7ee74d5f86ea61/638f69a2a4e0d993166def1c_Group_277_1_1_optimized.webp"
-      />
+      <Image src={IMG} alt="" />
     </Container>
   );
 };
@@ -35,8 +34,9 @@ const Image = styled.img`
   position: static;
   width: 40vw;
   max-width: 600px;
-  margin-left: -101px;
-
+  margin-top: 3rem;
+  /* margin-left: -101px; */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   @media screen and (max-width: 992px) {
     width: 60vw;
   }

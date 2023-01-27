@@ -5,7 +5,7 @@ import Title from "../../lib/Title";
 
 const About = () => {
   return (
-    <Container>
+    <Container id="about">
       {/* <Title>Epsilon Beta Technologies</Title> */}
       <Title className="center gd">About Us</Title>
       <br />

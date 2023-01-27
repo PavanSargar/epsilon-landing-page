@@ -5,7 +5,7 @@ import Title from "../../../lib/Title";
 import Para from "../../../lib/Para";
 
 import { englishContent } from "../../../content";
-import IMG from "../../../assets/nesadocimg.svg";
+import IMG from "../../../assets/ep4.webp";
 import LOGO from "../../../assets/Nesadoc.png";
 
 const Nesadoc = ({ animation }) => {
@@ -57,10 +57,12 @@ const Image = styled.img`
 
   @media screen and (max-width: 992px) {
     width: 60vw;
-    margin-left: 20px;
+    margin-top: 2rem;
+    /* margin-left: 20px; */
   }
   @media screen and (max-width: 768px) {
-    margin-left: 40px;
+    /* margin-left: 40px; */
+    
   }
 
   &.logo {
@@ -68,6 +70,7 @@ const Image = styled.img`
     max-width: 200px;
 
     margin-left: -3rem;
+    margin-top: 0;
 
     @media screen and (max-width: 992px) {
       width: 30vw;

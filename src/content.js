@@ -33,3 +33,39 @@ export const englishContent = {
     },
   },
 };
+
+const spanishContent = {
+  title: "Epsilon Beta Technologies",
+  description: `Somos una empresa que acerca la tecnología del futuro a los emprendedores de hoy.
+
+  Permitimos que tengas el control de tu salud y de tus seres queridos.
+  Desarrollamos tecnologia para mejorar tu calidad de vida.`,
+
+  products: {
+    nesadoc: {
+      title: "Nesadoc",
+      description: `No te quedes con dudas, consulta con un medico donde y cuando quieras.
+      `,
+      tapBtn: "Quiero cuidarme -->",
+    },
+    nesalink: {
+      title: "Nesalink",
+      description: `Con tus datos podemos brindarte lo que tu salud necesita.
+
+      Tu expediente medico donde estes.
+      
+      Tus datos seguros e interoperables de manera internacional`,
+      tabBtn: "Potenciado con inteligencia artificial.",
+    },
+    nesaAi: {
+      title: "NesaAI",
+      description: `Mejorando el conocimiento para una medicina más humana.
+
+      La mejor manera de cuidar tu salud basado en la evidencia.
+      
+      Cuidamos de la salud de tu equipo.`,
+      tapBtn: "Solucion para tu empresa -->",
+      description2: ``,
+    },
+  },
+};

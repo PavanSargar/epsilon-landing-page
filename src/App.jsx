@@ -17,23 +17,23 @@ import Contact from "./components/Contact/Contact";
 function App() {
   useEffect(() => {
     Aos.init({ duration: 1500 });
-  });
+  }, []);
 
   return (
     <>
       <Navbar />
       <Container>
-        <Hero animation="fade-down" />
+        <Hero />
         <OurProducts animation="fade-down" />
-        <Nesadoc animation="fade-down" />
+        <Nesadoc />
         <Spacing />
-        <Nesalink animation="fade-down" />
+        <Nesalink  />
         <Spacing />
-        <NesaAi animation="fade-down" />
+        <NesaAi />
         <Spacing />
-        <About />
-        <Spacing />
-        <Contact />
+        <About animation="fade-down" />
+        <Spacing  />
+        <Contact animation="fade-down" />
       </Container>
     </>
   );

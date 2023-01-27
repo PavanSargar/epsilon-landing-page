@@ -5,7 +5,7 @@ import { Grid, GridItem } from "../../../lib/Grid";
 import Para from "../../../lib/Para";
 import Title from "../../../lib/Title";
 import IMG from "../../../assets/nesalink.png";
-import IMG1 from "../../../assets/nesalink-img.png";
+import IMG1 from "../../../assets/ep1.webp";
 import { englishContent } from "../../../content";
 
 const Nesalink = ({ animation }) => {
@@ -42,28 +42,18 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-  position: relative;
-  left: 100px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-  max-width: 245px;
-  margin-right: 8vw;
-  margin-bottom: 0;
-  margin-left: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
-  -o-object-position: 50% 0%;
-  object-position: 50% 0%;
+  position: static;
+  width: 40vw;
+  max-width: 600px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 
   &.mobile-img {
     display: none;
   }
 
   @media screen and (max-width: 992px) {
-    width: 60vw;
+    /* width: 60vw; */
     margin-left: -20px;
   }
 
@@ -73,7 +63,13 @@ const Image = styled.img`
 
     &.mobile-img {
       display: flex;
-      margin-left: -30px;
+      margin-left: 0px;
+      margin-top: 2rem;
+      width: 60vw;
+    }
+
+    &.logo-img {
+      display: flex;
     }
   }
 
@@ -82,12 +78,13 @@ const Image = styled.img`
     width: 10vw;
     max-width: 200px;
 
-    margin-left: -8rem;
+    margin-left: -2rem;
+    box-shadow: none;
 
     @media screen and (max-width: 992px) {
       width: 30vw;
       max-width: 200px;
-      margin-left: -1rem;
+      /* margin-left: -1rem; */
     }
   }
 `;

@@ -20,25 +20,43 @@ const Navbar = () => {
 
         <Container className="nav-items">
           <p>
-            <span>Products</span>
+            <span>
+              <a href="#products">Products</a>
+            </span>
           </p>
           <p>
-            <span>About</span>
+            <span>
+              <a href="#about">About</a>
+            </span>
           </p>
           <p>
-            <span>Contact</span>
+            <span>
+              <a href="#contact">Contact</a>
+            </span>
           </p>
         </Container>
       </Container>
       <Container className={`nav-mobile-menu ${isOpen ? "open" : "close"} `}>
         <p>
-          <span>Products</span>
+          <span>
+            <a onClick={() => setOpen(false)} href="#products">
+              Products
+            </a>
+          </span>
         </p>
         <p>
-          <span>About</span>
+          <span>
+            <a onClick={() => setOpen(false)} href="#about">
+              About
+            </a>
+          </span>
         </p>
         <p>
-          <span>Contact</span>
+          <span>
+            <a onClick={() => setOpen(false)} href="#contact">
+              Contact
+            </a>
+          </span>
         </p>
       </Container>
 
@@ -110,6 +128,10 @@ const Container = styled.div`
       font-size: 15px;
       font-weight: 400;
       cursor: pointer;
+
+      a {
+        all: unset;
+      }
     }
   }
 
@@ -159,6 +181,10 @@ const Container = styled.div`
         color: #534b57;
         font-size: 15px;
         font-weight: 400;
+
+        a {
+          all: unset;
+        }
       }
     }
   }

@@ -5,6 +5,7 @@ import Title from "../../../lib/Title";
 import Para from "../../../lib/Para";
 
 import IMG from "../../../assets/nesaai.png";
+import IMG2 from "../../../assets/ep3.webp";
 
 import { englishContent } from "../../../content";
 
@@ -28,10 +29,7 @@ const NesaAi = ({ animation }) => {
           </Para>
         </GridItem>
         <GridItem md="6" sm="12" xs="12">
-          <Image
-            alt=""
-            src="https://uploads-ssl.webflow.com/62d7d2c09b7ee74d5f86ea61/6385e40b0a1e075eae4acb2b_Group_263_1_1_optimized-p-1080.webp"
-          />
+          <Image className="img" alt="" src={IMG2} />
         </GridItem>
       </Grid>
     </Container>
@@ -50,17 +48,23 @@ const Image = styled.img`
   position: static;
   width: 40vw;
   max-width: 600px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-  @media screen and (max-width: 992px) {
-    width: 60vw;
-    margin-left: 20px;
+  &.img {
+    margin-left: 1rem;
+
+    @media screen and (max-width: 992px) {
+      width: 60vw;
+      margin: 1rem auto 0;
+      /* margin-left: 60px; */
+    }
   }
 
   &.logo-img {
     background-color: transparent;
     width: 10vw;
     max-width: 200px;
-
+    box-shadow: none;
     margin-left: -1rem;
 
     @media screen and (max-width: 992px) {

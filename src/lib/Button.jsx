@@ -30,6 +30,11 @@ const Container = styled.button`
   }
 
 
+  a {
+    all: unset;
+  }
+
+
   &.nav-btn {
     @media screen and (max-width: 768px) {
       display: none;

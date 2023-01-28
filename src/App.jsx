@@ -23,17 +23,17 @@ function App() {
     <>
       <Navbar />
       <Container>
-        <Hero animation="fade-down" />
+        <Hero />
         <OurProducts />
-        <Nesadoc animation="fade-down" />
+        <Nesadoc />
         <Spacing />
-        <Nesalink animation="fade-down" />
+        <Nesalink />
         <Spacing />
-        <NesaAi animation="fade-down" />
+        <NesaAi  />
         <Spacing />
-        <About animation="fade-down" />
+        <About  />
         <Spacing />
-        <Contact animation="fade-down" />
+        <Contact />
       </Container>
     </>
   );

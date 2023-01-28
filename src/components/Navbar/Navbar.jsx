@@ -64,8 +64,14 @@ const Navbar = () => {
         <span onClick={() => setOpen(!isOpen)}>
           {isOpen ? <MdClose /> : <FaBars />}
         </span>
-        <Button className="nav-btn">Button1</Button>
-        <Button className="nav-btn bg-dark">Button2</Button>
+
+        <a href="#products">
+          <Button className="nav-btn">View Products</Button>
+        </a>
+
+        <a href="#contact">
+          <Button className="nav-btn bg-dark">Contact Us</Button>
+        </a>
       </Container>
     </Nav>
   );
@@ -204,6 +210,10 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    a {
+      all: unset;
+    }
 
     span {
       display: none;
